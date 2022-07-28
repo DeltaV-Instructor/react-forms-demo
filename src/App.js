@@ -6,6 +6,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
  let data = [1,2,3,4,5,6,7,8,9,10]; 
 
  class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      userName: '',
+      howToSort: ''
+    }
+  }
 
 
   // after form create add function
@@ -14,6 +21,11 @@ import ListGroup from 'react-bootstrap/ListGroup';
     let userName = event.target.userName.value;
     let selected = event.target.selected.value;
     console.log('user name: ',userName, selected);
+    //now after build constructor function
+    this.setState({
+      userName: userName,
+      howToSort: selected
+    })
   };
 
 
