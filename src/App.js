@@ -121,3 +121,29 @@ handleSelect = (event) => {
   }
 }
 export default App;
+
+/*
+
+<form onSubmit={this.handleSubmit}>
+          <label>
+          with no back slash we get error 
+          <input type="text" name="userName" onInput={this.handleInput} />
+          </label>
+           also add a drop down for users to select 
+          <fieldset>
+            <legend>Selected Numbers</legend>
+            <select name="selected" onChange={this.handleSelect}>
+              <option value="all">All</option>
+              <option value="even">Even</option>
+              <option value="odd">Odd</option>
+            </select>
+          </fieldset>
+          how do we submit a form, there are several ways this is similar to
+           201 lets add a button, add the type for react be explicit for reacts sake
+           So now add event listener just like on click
+           
+          <button type="submit">Submit</button>
+        </form>
+
+
+*/
